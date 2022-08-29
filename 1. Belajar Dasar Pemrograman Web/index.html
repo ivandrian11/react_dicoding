@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Santong Marketplace</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#definisi">Definisi</a></li>
+          <li><a href="#produk">Produk</a></li>
+          <li><a href="#feedback">Feedback</a></li>
+        </ul>
+      </nav>
+      <div class="jumbotron" id="definisi">
+        <h1>Santong Marketplace</h1>
+        <p>Merupakan wadah terbaik untuk mendapatkan produk UMKM terbaik dan eksklusif dari Desa Santong, Kecamatan Kayangan, Kabupaten Lombok Utara.</p>
+      </div>
+    </header>
+
+    <main>
+      <article class="product" id="produk">
+        <header>
+          <h2>Produk Unggulan</h2>
+          <p style="margin: 0 0 16px 0">Produk unggulan yang terdapat pada Desa Santong.</p>
+        </header>
+        <div class="flex-container">
+          <section class="flex-item">
+            <div class="card">
+              <img src="https://i.ibb.co/qWrthRC/nasel.jpg" alt="nasel" class="img-card" />
+              <h2>Nasel</h2>
+              <p class="category">Pisang Sale</p>
+              <button class="btn-primary btn-product">Selengkapnya</button>
+            </div>
+          </section>
+          <section class="flex-item">
+            <div class="card">
+              <img src="https://i.ibb.co/CQ2yDBV/alamanda.jpg" alt="nasel" class="img-card" />
+              <h2>Alamanda</h2>
+              <p class="category">Kopi</p>
+              <button class="btn-primary btn-product">Selengkapnya</button>
+            </div>
+          </section>
+          <section class="flex-item">
+            <div class="card">
+              <img src="https://i.ibb.co/Qdm4FqC/Ully-Lasingan.jpg" alt="nasel" class="img-card" />
+              <h2>Ully Lasingan</h2>
+              <p class="category">Kopi</p>
+              <button class="btn-primary btn-product">Selengkapnya</button>
+            </div>
+          </section>
+        </div>
+      </article>
+
+      <article class="feedback" id="feedback">
+        <div class="flex-container flex-center">
+          <div class="flex-item duo">
+            <h2 class="feedback-title">Sampaikan Saran dan Masukan kepada Kami</h2>
+            <form>
+              <label for="name">Nama</label> <br />
+              <input type="text" id="name" name="name" required />
+              <br />
+              <label for="message">Pesan</label> <br />
+              <textarea id="message" name="message" rows="5" required></textarea>
+              <br />
+              <button class="btn-primary" onclick="sendFeedback()">Kirim</button>
+            </form>
+          </div>
+          <div class="flex-item duo img-only">
+            <img src="assets/feedback.svg" alt="hero-img" class="feedback-img" />
+          </div>
+        </div>
+      </article>
+
+      <aside class="flex-container">
+        <article class="history card">
+          <h2 style="color: #d43c41">Riwayat Feedback</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Nama</th>
+                <th>Pesan</th>
+              </tr>
+            </thead>
+            <tbody id="historyList"></tbody>
+          </table>
+        </article>
+        <article class="info card">
+          <h2 style="color: #d43c41">Biodata</h2>
+          <img src="assets/ava.jpg" alt="my-avatar" class="my-ava" />
+          <h3>Ivan Andrianto</h3>
+        </article>
+      </aside>
+    </main>
+
+    <footer>
+      <p>Belajar Dasar Pemrograman Web &#169; 2022, Dicoding Academy</p>
+    </footer>
+
+    <script src="assets/js/history.js"></script>
+  </body>
+</html>
